@@ -1,4 +1,10 @@
 " Sprint function
+" Things Todo
+" Add more languages
+" Global variables for copen
+" Global variable for cw
+" Global variable for writting the file
+" Help file
 function! Sprint()
     w
     if (&ft=='c')
@@ -17,7 +23,7 @@ function! Sprint()
         AsyncRun echo "Running Node"; node %
     endif
     if (&ft=='haskell')
-        AsyncRun echo "Running Ghc"; ghc % -o sprintFile; ./sprintFile
+        AsyncRun echo "Running Ghc"; ghc % -o sprintFile; ./sprintFile ; rm sprintFile
     endif
     copen
 endfunction
