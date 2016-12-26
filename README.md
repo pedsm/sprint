@@ -40,3 +40,11 @@ endif
 
 ## Using
 Sprint is simple just run :Sprint at any file of the supported languages and watch the result.
+
+#### To-do
+Pull requests are helpful and the code base is small
+  - [ ] Add more languages
+  - [ ] Global variables for copen
+  - [ ] Global variables for cw
+  - [ ] Global variable for writing the file
+  - [ ] Finish the help help file
