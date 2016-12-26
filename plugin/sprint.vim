@@ -17,7 +17,7 @@ function! Sprint()
         AsyncRun echo "Running Node"; node %
     endif
     if (&ft=='haskell')
-        AsyncRun echo "Running Ghc"; ghc % -o sprintFile; ./sprintFile ; rm sprintFile
+        AsyncRun echo "Running Ghc"; ghc %; ./%< ;
     endif
     copen
 endfunction
