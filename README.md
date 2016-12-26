@@ -47,4 +47,4 @@ Pull requests are helpful and the code base is small
   - [ ] Global variables for copen
   - [ ] Global variables for cw
   - [ ] Global variable for writing the file
-  - [ ] Finish the help help file
+  - [x] Finish the help help file
