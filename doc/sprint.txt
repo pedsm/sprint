@@ -10,6 +10,8 @@ CONTENTS                                                      *sprint-contents*
     1.  Intro........................................|sprint-intro|
     2.  Commands.....................................|sprint-functions|
     2.1 Sprint.......................................|Sprint|
+    2.2 SprintStop...................................|SprintStop|
+    2.  Customization................................|sprint-customization|
     3   Support Languages............................|sprint-langauges|
 
 ===============================================================================
@@ -22,16 +24,30 @@ COMMANDS                                                     *sprint-functions*
 
 Overview:~
 
-  |Sprint|................Runs the current file
+  |Sprint|....................Runs the current file
+  |SprintStop|................Stops current Async process
 
 
 -------------------------------------------------------------------------------
   :Sprint                                                              *Sprint*
   Compiles and runs the current file based on the default settings
 
+  :SprintStop                                                       *SprintStop*
+  Stops current sprint or async job
+
 
 ===============================================================================
-SUPPORTED LANGUAGES                                          *sprint-languages*
+CUSTOMIZATION                                             *sprint-customization*
+
+set g:SprintForceRun = 1
+Forces Sprint to run regardlesss of other runnning async jobs
+
+set g:SprintHidden = 1
+Sprint hidden means quickfix will not show while the program runs but it can
+be brought up by the copen command
+
+===============================================================================
+SUPPORTED LANGUAGES                                           *sprint-languages*
 
 Sprint currently supports
 

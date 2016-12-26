@@ -40,4 +40,4 @@ function! Sprint()
 endfunction
 
 command! Sprint call Sprint()
-command! SprintStop call AsyncStop()
+command! SprintStop AsyncStop
