@@ -1,0 +1,52 @@
+sprint.txt* Async file running
+===============================================================================
+#                                                                             #
+#                                Sprint                                       #
+#                                                                             #
+===============================================================================
+CONTENTS                                                      *sprint-contents*
+
+    1.  Contents.....................................|sprint-contents|
+    1.  Intro........................................|sprint-intro|
+    2.  Commands.....................................|sprint-functions|
+    2.1 Sprint.......................................|Sprint|
+    3   Support Languages............................|sprint-langauges|
+
+===============================================================================
+INTRO                                                            *sprint-intro*
+
+Sprint adds a command to vim to allow for asynchronus running of your file, perfect for testing. On compiled formats sprint will compile to the defautl name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
+
+===============================================================================
+COMMANDS                                                     *sprint-functions*
+
+Overview:~
+
+  |Sprint|................Runs the current file
+
+
+-------------------------------------------------------------------------------
+  :Sprint                                                              *Sprint*
+  Compiles and runs the current file based on the default settings
+
+
+===============================================================================
+SUPPORTED LANGUAGES                                          *sprint-languages*
+
+Sprint currently supports
+
+ -C
+ -C++
+ -Python
+ -Php
+ -Javascript
+ -Haskell
+
+If you want another language added just submit an issue or make a pull request.
+
+-------------------------------------------------------------------------------
+
+First public release: 2016/12/26
+
+===============================================================================
+vim:ft=help:et:ts=2:sw=2:sts=2:norl

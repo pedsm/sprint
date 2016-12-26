@@ -1,8 +1,8 @@
 # Sprint
 Async file running
+![Screenshot](doc/pic1.png)
 ## tl;dr
 Just like any IDE's run button this plugins just runs your code.
-![Screenshot](doc/pic1.png)
 
 ## Dependencies
 Sprint relies heavily on @skywind3000 [async run](https://github.com/skywind3000/asyncrun.vim), sprint also relies on Vim 8.0's async functionality. Depending on what language is being used with Sprint you will require a different dependecy check the supported languages area for reference.
