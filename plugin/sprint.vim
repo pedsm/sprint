@@ -6,7 +6,6 @@
 " let g:SprintHidden = 1
 " Sprint function
 " let g:SprintForceRun = 0
-" let g:SprintHidden = 0
 function! Sprint()
     if exists("g:SprintForceRun")
         if g:SprintForceRun
@@ -36,6 +35,8 @@ function! Sprint()
         if g:SprintHidden == 0
             copen
         endif
+    else
+        copen
     endif
 endfunction
 
