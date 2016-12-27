@@ -18,14 +18,14 @@ Sprint adds a command to vim to allow for asynchronous running of your file, per
 
 ## Supported languages and language dependencies
 
-|Languages | Compiler|
-|--------|--------|
-|C | GCC|
-|C++ | G++|
-|Python | python|
-|Php | php|
-|Javascript | node|
-|Haskell | ghc|
+|Languages  | Compiler|
+|-----------|---------|
+|C          |GCC      |
+|C++        |G++      |
+|Python     |python   |
+|Php        |php      |
+|Javascript |node     |
+|Haskell    |ghc      |
 
 ### Things to consider
 In order to compile the contents of the buffer Sprint must save your files before executing. However after executing the file Sprint will delete the file.(Sprint is for quick testing not for final release builds, makefiles are your friend)
