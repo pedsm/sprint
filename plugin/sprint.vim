@@ -31,6 +31,9 @@ function! Sprint()
     if (&ft=='haskell')
         AsyncRun echo "Running Ghc"; ghc %; ./%< ;
     endif
+    if (&ft=='tex')
+        AsyncRun echo "Running pdfLatex and evince"; pdflatex %; evince %<.pdf ;
+    endif
     if exists("g:SprintHidden")
         if g:SprintHidden == 0
             copen
