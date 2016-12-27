@@ -34,6 +34,9 @@ function! Sprint()
     if (&ft=='tex')
         AsyncRun echo "Running pdfLatex and evince"; pdflatex %; evince %<.pdf ;
     endif
+    if (&ft=='markdown')
+        AsyncRun echo "Running pandoc and evince"; pandoc % -o %<.pdf --latex-engine=pdflatex; evince %<.pdf ;
+    endif
     if exists("g:SprintHidden")
         if g:SprintHidden == 0
             copen
