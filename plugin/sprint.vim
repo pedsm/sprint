@@ -38,11 +38,8 @@ function! Sprint()
         if(expand("%:t") == "README.md")
             AsyncRun echo "Compiling github markdown"; pandoc -s -S -c ~/.vim/bundle/sprint/assets/github.css -o %<.html %;
         else
-            AsyncRun echo "Compiling pdflatex"; pandoc -s -S -o %<.pdf %;
+            AsyncRun echo "Compiling pandoc pdflatex"; pandoc -s -S -o %<.pdf %;
         endif
-    endif
-    if (&ft=='markdown')
-        AsyncRun echo "Running pandoc and evince"; pandoc % -o %<.pdf --latex-engine=pdflatex; evince %<.pdf ;
     endif
     if exists("g:SprintHidden")
         if g:SprintHidden == 0
