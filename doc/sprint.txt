@@ -56,7 +56,9 @@ Sprint currently supports
  -Python
  -Php
  -Javascript
+ -CoffeeScript
  -Haskell
+ -Markdown
 
 If you want another language added just submit an issue or make a pull request.
 
