@@ -28,6 +28,9 @@ function! Sprint()
     if (&ft=='javascript')
         AsyncRun echo "Running Node"; node %
     endif
+    if (&ft=='coffee')
+        AsyncRun echo "Running Coffee"; coffee %
+    endif
     if (&ft=='haskell')
         AsyncRun echo "Running Ghc"; ghc %; ./%< ;
     endif
