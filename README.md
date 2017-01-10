@@ -1,8 +1,8 @@
-# Sprint
+# Sprint 2.0
 Async file running
 
-
 ![Screenshot](doc/pic1.png)
+
 ## tl;dr
 Just like any IDE's run button this plugins just runs your code.
 
@@ -25,7 +25,11 @@ Sprint adds a command to vim to allow for asynchronous running of your file, per
 |Python     |python   |
 |Php        |php      |
 |Javascript |node     |
+|Coffee Script |coffee     |
 |Haskell    |ghc      |
+|Latex      |pdflatex |
+|Markdown   |pandoc(pdf)|
+|README.md  |pandoc(github styling)|
 
 ### Things to consider
 In order to compile the contents of the buffer Sprint must save your files before executing. However after executing the file Sprint will delete the file.(Sprint is for quick testing not for final release builds, makefiles are your friend)

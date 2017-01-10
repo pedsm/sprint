@@ -28,8 +28,21 @@ function! Sprint()
     if (&ft=='javascript')
         AsyncRun echo "Running Node"; node %
     endif
+    if (&ft=='coffee')
+        AsyncRun echo "Running Coffee"; coffee %
+    endif
     if (&ft=='haskell')
         AsyncRun echo "Running Ghc"; ghc %; ./%< ;
+    endif
+    if (&ft=='tex')
+        AsyncRun echo "Running pdfLatex"; pdflatex %;
+    endif
+    if (&ft=='markdown')
+        if(expand("%:t") == "README.md")
+            AsyncRun echo "Compiling github markdown"; pandoc -s -S -c ~/.vim/bundle/sprint/assets/github.css -o %<.html %;
+        else
+            AsyncRun echo "Compiling pandoc pdflatex"; pandoc -s -S -o %<.pdf %;
+        endif
     endif
     if exists("g:SprintHidden")
         if g:SprintHidden == 0
