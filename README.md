@@ -14,7 +14,7 @@ Sprint relies heavily on @skywind3000 [async run](https://github.com/skywind3000
 - Language compilers/interpreters
 
 ## What does it do?
-Sprint adds a command to vim to allow for asynchronous running of your file, perfect for testing. On compiled formats sprint will compile to the defautl name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
+Sprint adds a command to vim to allow for asynchronous running of your file, perfect for testing. On compiled formats sprint will compile to the default name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
 
 ## Supported languages and language dependencies
 
@@ -25,7 +25,7 @@ Sprint adds a command to vim to allow for asynchronous running of your file, per
 |Python     |python   |
 |Php        |php      |
 |Javascript |node     |
-|Coffee Script |coffee     |
+|Java       |javac    |
 |Haskell    |ghc      |
 |Latex      |pdflatex |
 |Markdown   |pandoc(pdf)|
@@ -48,21 +48,23 @@ endif
 Sprint is simple just run :Sprint at any file of the supported languages and watch the result.
 
 ## Customizing
-If you want Sprints to override running programs(Ideal for programs that run for a long time you can set the following variables on your vimrc.
+If you want Sprints to not override running programs(Ideal for programs that run for a long time you can set the following variables on your vimrc.
 ``` vimL
-    let g:SprintForceRun = 1
+    let g:SprintForceRun = 0
 ```
-If you want Sprint not to open the quickfix window and you rather open it manually add the folling to your vimrc
+If you want Sprint not to open the quickfix window and you rather open it manually add the following to your vimrc
 ``` vimL
     let g:SprintHidden = 1
 ```
+## Known Bugs
 
+- SprintForceRun will stop a running program but not start the following unless used twice.
 
 #### To-do
 Pull requests are helpful and the code base is small
   - [ ] Add more languages
   - [x] Global variables for copen
-  - [ ] Global variables for cw
+  - [ ] Global variables for cw(Error messaging)
   - [ ] Global variable for writing the file
   - [x] Global variable for override running process
   - [x] Finish the help help file
