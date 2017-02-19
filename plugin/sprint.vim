@@ -7,12 +7,12 @@
 " Sprint function
 let g:SprintForceRun = 1
 function! Sprint()
+    w
     if exists("g:SprintForceRun")
         if g:SprintForceRun
-            AsyncStop
+            AsyncStop!
         endif
     endif
-    w
     if (&ft=='c')
         AsyncRun echo "Running C compiler"; gcc % ; ./a.out
     endif

@@ -56,7 +56,9 @@ If you want Sprint not to open the quickfix window and you rather open it manual
 ``` vimL
     let g:SprintHidden = 1
 ```
+## Known Bugs
 
+- SprintForceRun will stop a running program but not start the following unless used twice.
 
 #### To-do
 Pull requests are helpful and the code base is small
