@@ -14,7 +14,7 @@ Sprint relies heavily on @skywind3000 [async run](https://github.com/skywind3000
 - Language compilers/interpreters
 
 ## What does it do?
-Sprint adds a command to vim to allow for asynchronous running of your file, perfect for testing. On compiled formats sprint will compile to the defautl name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
+Sprint adds a command to vim to allow for asynchronous running of your file, perfect for testing. On compiled formats sprint will compile to the default name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
 
 ## Supported languages and language dependencies
 
@@ -25,7 +25,7 @@ Sprint adds a command to vim to allow for asynchronous running of your file, per
 |Python     |python   |
 |Php        |php      |
 |Javascript |node     |
-|Coffee Script |coffee     |
+|Java       |javac    |
 |Haskell    |ghc      |
 |Latex      |pdflatex |
 |Markdown   |pandoc(pdf)|
@@ -62,7 +62,7 @@ If you want Sprint not to open the quickfix window and you rather open it manual
 Pull requests are helpful and the code base is small
   - [ ] Add more languages
   - [x] Global variables for copen
-  - [ ] Global variables for cw
+  - [ ] Global variables for cw(Error messaging)
   - [ ] Global variable for writing the file
   - [x] Global variable for override running process
   - [x] Finish the help help file
