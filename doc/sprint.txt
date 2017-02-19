@@ -17,7 +17,7 @@ CONTENTS                                                      *sprint-contents*
 ===============================================================================
 INTRO                                                            *sprint-intro*
 
-Sprint adds a command to vim to allow for asynchronus running of your file, perfect for testing. On compiled formats sprint will compile to the defautl name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
+Sprint adds a command to vim to allow for asynchronus running of your file, perfect for testing. On compiled formats sprint will compile to the default name or use the "sprintFile" name to create a file to run, so make sure no file with this name exists.
 
 ===============================================================================
 COMMANDS                                                     *sprint-functions*
@@ -39,8 +39,8 @@ Overview:~
 ===============================================================================
 CUSTOMIZATION                                             *sprint-customization*
 
-set g:SprintForceRun = 1
-Forces Sprint to run regardlesss of other runnning async jobs
+set g:SprintForceRun = 0
+Forces Sprint to only run if the previous job was completed 
 
 set g:SprintHidden = 1
 Sprint hidden means quickfix will not show while the program runs but it can
@@ -56,9 +56,12 @@ Sprint currently supports
  -Python
  -Php
  -Javascript
- -CoffeeScript
+ -CoffeeScript(Currently removed due to bug)
+ -Java(Will compile and run the Main.java file)
  -Haskell
  -Markdown
+  -README.md files will compile into github html
+  -Other files will compile into Latex
 
 If you want another language added just submit an issue or make a pull request.
 

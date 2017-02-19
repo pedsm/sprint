@@ -5,7 +5,7 @@
 " Does not open the quickfix window while running, this can be opened with the default command copen
 " let g:SprintHidden = 1
 " Sprint function
-" let g:SprintForceRun = 0
+let g:SprintForceRun = 1
 function! Sprint()
     if exists("g:SprintForceRun")
         if g:SprintForceRun
@@ -28,10 +28,13 @@ function! Sprint()
     if (&ft=='javascript')
         AsyncRun echo "Running Node"; node %
     endif
-    if (&ft=='coffee')
-        AsyncRun echo "Running Coffee"; coffee %
+    if (&ft=='java')
+        AsyncRun echo "Running Javac"; javac Main.java; java Main;
     endif
-    if (&ft=='haskell')
+    " if (&ft=='coffee')
+    "     AsyncRun echo "Running Coffee"; coffee %
+    " endif
+    if (&ft=='haskell' || &ft=='lhaskell')
         AsyncRun echo "Running Ghc"; ghc %; ./%< ;
     endif
     if (&ft=='tex')
