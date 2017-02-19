@@ -48,11 +48,11 @@ endif
 Sprint is simple just run :Sprint at any file of the supported languages and watch the result.
 
 ## Customizing
-If you want Sprints to override running programs(Ideal for programs that run for a long time you can set the following variables on your vimrc.
+If you want Sprints to not override running programs(Ideal for programs that run for a long time you can set the following variables on your vimrc.
 ``` vimL
-    let g:SprintForceRun = 1
+    let g:SprintForceRun = 0
 ```
-If you want Sprint not to open the quickfix window and you rather open it manually add the folling to your vimrc
+If you want Sprint not to open the quickfix window and you rather open it manually add the following to your vimrc
 ``` vimL
     let g:SprintHidden = 1
 ```
