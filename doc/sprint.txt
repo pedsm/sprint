@@ -59,6 +59,7 @@ Sprint currently supports
  -CoffeeScript(Currently removed due to bug)
  -Java(Will compile and run the Main.java file)
  -Haskell
+ -Rust
  -Markdown
   -README.md files will compile into github html
   -Other files will compile into Latex

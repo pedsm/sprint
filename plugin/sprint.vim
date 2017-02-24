@@ -34,6 +34,9 @@ function! Sprint()
     " if (&ft=='coffee')
     "     AsyncRun echo "Running Coffee"; coffee %
     " endif
+    if (&ft=='rust')
+        AsyncRun echo "Running rustc"; rustc %; ./%< ;
+    endif
     if (&ft=='haskell' || &ft=='lhaskell')
         AsyncRun echo "Running Ghc"; ghc %; ./%< ;
     endif
