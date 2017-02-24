@@ -26,6 +26,7 @@ Sprint adds a command to vim to allow for asynchronous running of your file, per
 |Php        |php      |
 |Javascript |node     |
 |Java       |javac    |
+|Rust       |rustc    |
 |Haskell    |ghc      |
 |Latex      |pdflatex |
 |Markdown   |pandoc(pdf)|
